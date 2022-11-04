@@ -7,7 +7,7 @@ public class Start {
 
     public static void main(String[] args) {
 
-        String fileName = "src\\file.txt";
+        String fileName = "src\\text.txt";
 
         try (Stream<String> streams = Files.lines(Paths.get(fileName))) {
             streams.forEach(System.out::println);
